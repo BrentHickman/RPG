@@ -9,9 +9,9 @@ export default class Monster {
     this.name = name;
   }
 
-  // updateHp(hitPoints) {
-  //   this.hitPoints = hitPoints;
-  // }
+  updateHp(hitPoints) {
+    // this.hitPoints = hitPoints;
+  }
 
   // updateAtk(attack) {
   //   this.attack = attack;
