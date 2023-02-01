@@ -10,8 +10,8 @@ export default class Character {
     this.type = type;
   }
 
-  updateAttribute() {
-
+  updateAttribute(attribute) {
+    this.attribute = attribute;
   }
 };
 
