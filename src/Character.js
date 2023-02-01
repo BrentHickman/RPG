@@ -9,5 +9,9 @@ export default class Character {
   addType(type) {
     this.type = type;
   }
+
+  updateAttribute() {
+
+  }
 };
 

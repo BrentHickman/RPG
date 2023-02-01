@@ -18,4 +18,13 @@ describe('Character', () => {
     expect(myCharacter.hitPoints).toEqual(5);
     expect(myCharacter.attack).toEqual(5);
   });
+
+  test('should correctly change the attrubute of Character', () => {
+    const myCharacter = new Character("warrior", "strength", 5, 5);
+    myCharacter.updateAttribute("strength + 1")
+    expect(myCharacter.type).toEqual("warrior");
+    expect(myCharacter.attribute).toEqual("strength + 1");
+    expect(myCharacter.hitPoints).toEqual(5);
+    expect(myCharacter.attack).toEqual(5);
+  });
 });
