@@ -10,7 +10,7 @@ export default class Monster {
   }
 
   updateHp(hitPoints) {
-    // this.hitPoints = hitPoints;
+    this.hitPoints = hitPoints;
   }
 
   // updateAtk(attack) {
