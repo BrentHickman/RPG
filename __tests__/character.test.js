@@ -30,7 +30,7 @@ describe('Character', () => {
 
   test('should correctly change the hitPoints of Character', () => {
     const myCharacter = new Character("warrior", "strength", 5, 5);
-    myCharacter.updateHp(-1)
+    myCharacter.updateHp(4)
     expect(myCharacter.type).toEqual("warrior");
     expect(myCharacter.attribute).toEqual("strength");
     expect(myCharacter.hitPoints).toEqual(4);
