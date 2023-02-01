@@ -17,5 +17,8 @@ export default class Character {
   updateHp(hitPoints) {
     this.hitPoints = hitPoints;
   }
+
+  updateAtk(attack) {
+  }
 };
 
