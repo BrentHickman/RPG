@@ -14,6 +14,6 @@ export default class Monster {
   }
 
   updateAtk(attack) {
-    // this.attack = attack;
+    this.attack = attack;
   }
 }
