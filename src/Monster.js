@@ -4,4 +4,16 @@ export default class Monster {
     this.hitPoints = hitPoints;
     this.attack = attack;
   }
+
+  updateName(name) {
+    // this.attribute = attribute;
+  }
+
+  // updateHp(hitPoints) {
+  //   this.hitPoints = hitPoints;
+  // }
+
+  // updateAtk(attack) {
+  //   this.attack = attack;
+  // }
 }
