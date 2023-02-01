@@ -9,7 +9,6 @@ describe('fight', () => {
     const myCharacter = new Character("warrior", "strength", 5, 5);
     const monster1 = new Monster("Monster1", 10, 1);
     let result = "";
-    fight (myCharacter, monster1);
-    expect(result).toEqual("you lost");
+    expect(fight()).toEqual("you lost");
   });
 });

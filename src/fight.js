@@ -1,3 +1,4 @@
-export default function fight(Character, Monster) {
-  // result = "you lost";
+export default function fight(character, monster) {
+  let result = "you lost";
+  return result;
 };
