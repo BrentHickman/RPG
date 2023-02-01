@@ -15,9 +15,15 @@ describe('Monster', () => {
     expect(monster1.name).toEqual("Monster2");
   });
 
-  test('should correctly update a Monster object name', () => {
+  test('should correctly update a Monster object hitpoints', () => {
     const monster1 = new Monster("Monster1", 10, 1);
     monster1.updateHp(5);
     expect(monster1.hitPoints).toEqual(5);
+  });
+
+  test('should correctly update a Monster object attack', () => {
+    const monster1 = new Monster("Monster1", 10, 1);
+    monster1.updateAtk(2);
+    expect(monster1.attack).toEqual(2);
   });
 });
