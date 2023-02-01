@@ -5,4 +5,9 @@ export default class Character {
     this.hitPoints = hitPoints;
     this.attack = attack;
   }
+
+  addType() {
+    
+  }
 };
+

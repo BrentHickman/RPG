@@ -9,4 +9,13 @@ describe('Character', () => {
     expect(myCharacter.hitPoints).toEqual(5);
     expect(myCharacter.attack).toEqual(5);
   });
+
+  test('should correctly change the type of Character', () => {
+    const myCharacter = new Character("warrior", "strength", 5, 5);
+    myCharacter.addType("mage")
+    expect(myCharacter.type).toEqual("mage");
+    expect(myCharacter.attribute).toEqual("strength");
+    expect(myCharacter.hitPoints).toEqual(5);
+    expect(myCharacter.attack).toEqual(5);
+  });
 });
