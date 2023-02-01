@@ -6,8 +6,8 @@ export default class Character {
     this.attack = attack;
   }
 
-  addType() {
-    
+  addType(type) {
+    this.type = type;
   }
 };
 
