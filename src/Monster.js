@@ -6,7 +6,7 @@ export default class Monster {
   }
 
   updateName(name) {
-    // this.attribute = attribute;
+    this.name = name;
   }
 
   // updateHp(hitPoints) {
