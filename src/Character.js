@@ -19,6 +19,7 @@ export default class Character {
   }
 
   updateAtk(attack) {
+    this.attack = attack;
   }
 };
 
