@@ -1,16 +1,19 @@
 export default function fight(character, monster) {
   let result = "";
-  console.log(monster)
-  for (let i = 0; i < monster.hitPoints; i++){
-    monster.hitPoints - character.attack;
-    character.hitPoints - monster.attack;
+  let monsterHp = parseInt(monster.hitPoints);
+  let monsterAtk = parseInt(monster.attack);
+  let characterHp = parseInt(character.hitPoints);
+  let characterAtk = parseInt(character.attack);
+  for (let i = 0; i < monsterHp; i++){
+    monsterHp = monsterHp - characterAtk;
+    characterHp = characterHp - monsterAtk;
   }
 
-  if (monster.hitPoints === 0 && character.hitPoints > 0){
+  if (monsterHp <= 0 && characterHp > 0){
     result = "you won";
   }
   else {
     result = "you lost";
   }
   return result;
-};
+}

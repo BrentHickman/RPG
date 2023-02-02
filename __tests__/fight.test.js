@@ -7,7 +7,7 @@ describe('fight', () => {
 
   test('should correctly return lost message', () => {
     const myCharacter = new Character("warrior", "strength", 5, 5);
-    const monster1 = new Monster("Monster1", 10, 1);
+    const monster1 = new Monster("Monster1", 10, 10);
     let result = "";
     expect(fight(myCharacter, monster1)).toEqual("you lost");
   });
