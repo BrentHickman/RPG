@@ -23,20 +23,36 @@ function charSubmit(event){
   }
 }
 
-// function monstSubmit(event){
-//   event.preventDefault();
-
-// }
+function monstSubmit(event){
+  event.preventDefault(event);
+  let choseMonster =  document.querySelector(".monsterForm select option:checked").value;
+  console.log(choseMonster);
+  if (choseMonster === "goblin") {
+    let myEnemy = new Monster("Goblin", 5, 2);
+    console.log(myEnemy);
+  }
+  else if (choseMonster === "troll"){
+    let myEnemy = new Monster("Troll", 10, 3);
+    console.log(myEnemy);
+  }
+  else if (choseMonster === "demon"){
+    let myEnemy = new Monster("Demon", 15, 5);
+    console.log(myEnemy);
+  }
+  else {
+    console.log("PLEASE CHOOSE A MONSTER!");
+  }
+}
 
 window.addEventListener("load", () => {
   const charForm = document.getElementById("charBuilder");
-  // const monstForm = document.getElementById("monsterForm");
+  const monstForm = document.getElementById("monsterForm");
   charForm.addEventListener("submit", (event) => {
     event.preventDefault();
     charSubmit(event);
   });
-  // monstForm.addEventListener("submit", (event) => {
-  //   event.preventDefault();
-  //   monstSubmit();
-  // });
+  monstForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    monstSubmit(event);
+  });
 });
