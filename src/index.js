@@ -47,7 +47,6 @@ function showMonst(myEnemy){
 // fight
 function startFight(myCharacter, myEnemy){
   fight(myCharacter, myEnemy);
-  console.log("result");
 }
 
 //character select section

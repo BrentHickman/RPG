@@ -15,6 +15,12 @@ export default function fight(character, monster) {
   else {
     result = "you lost";
   }
+  
+  let resultMessage = document.createElement("li");
+  resultMessage.innerText = result;
+  document.getElementById("resultArea").append(resultMessage);
+
   return result;
+  
   
 }
