@@ -5,8 +5,8 @@
 </head>
 <body>
   <h1>Monster Fight</h1>
-  <div id="chooseChar">
-    <form id="charBuilder" >
+  <div id="charForm">
+    <form class="charBuilder"id="charBuilder">
       <div>
         <label for="character">Choose your Character: </label>
         <select name="character" id="selectChar">
@@ -15,21 +15,30 @@
         <option value="rogue">Rogue</option>
       </select>
       </div>
-    </form>
+      <div>
+        <button id="charSubmit" type="submit">Select</button>
+      </div>
   </div>
+    </form>
   <br>
+  
   <div id="chooseMon">
-    <form id="charBuilder" >
+    <form id="monsterForm">
       <div>
         <label for="monster">Choose your Enemy: </label>
         <select name="monster" id="selectMon">
         <option value="goblin">Goblin</option>
         <option value="troll">Troll</option>
         <option value="demon">Demon</option>
-      </select>
+        </select>
+      </div>
+      <div>
+        <button id="monsterSubmit" type="submit">Select</button>
       </div>
     </form>
   </div>
+  <br>
+  <button id="fight" type="click">Fight</button>
   <div id="fightUi"></div>
 </body>
 </html>
