@@ -16,4 +16,5 @@ export default function fight(character, monster) {
     result = "you lost";
   }
   return result;
+  
 }
